@@ -65,14 +65,14 @@ public class MineSweeper {
         printBoard(board, moves);
         int row, line;
         while (true) {
-            System.out.printf("��� ���(�������, ������, �������� 1�): ");
+            System.out.printf("Ваш ход(введите столбец, строку, пример А5): ");
             String move = scanner.nextLine();
             row = move.charAt(0) - 'A';
             line = move.charAt(1) - '0';
             if (row < WIDTH && row >= 0 && line < HEIGHT && line >= 0) {
                 break;
             }
-            System.out.println("������� ���������� ������ �������� ����");
+            System.out.println("Невозможный ход!!! ");
 
 
         }
